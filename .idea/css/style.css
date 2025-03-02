@@ -1,0 +1,822 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Raleway;
+    /*font-family: Raleway, -apple-system, Roboto, Helvetica, sans-serif;*/
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(26, 26, 26, 1);
+}
+
+.landing-page {
+    overflow: hidden;
+    width: 100%;
+}
+
+.content-wrapper {
+    width: 100%;
+}
+
+/* Navigation menu */
+.main-menu {
+    display: flex;
+    width: 100%;
+    padding: 40px 100px;
+    align-items: center;
+    /*gap: 90px;*/
+    font-size: 14px;
+    color: rgba(26, 26, 26, 1);
+    font-weight: 500;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: inherit;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.menu-item:hover {
+    text-decoration: underline; /* Підкреслення при наведенні */
+    /*outline: none;  Забирає синю рамку при фокусі */
+}
+
+.contact-menu-item {
+    align-self: stretch;
+    display: flex;
+    margin: auto 0;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.contact-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 24px;
+    align-self: stretch;
+    margin: auto 0;
+    flex-shrink: 0;
+}
+
+/* Hero section */
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 333px;
+    margin-top: 5px;
+    width: 100%;
+    padding: 100px 0;
+    align-items: center;
+    color: rgba(26, 26, 26, 1);
+    justify-content: center;
+    overflow: hidden; /* Ховає зайві частини */
+}
+
+.hero-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-content {
+    position: relative;
+    width: 586px;
+    max-width: 100%;
+}
+
+.thesis-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.thesis-title {
+    font-size: 38px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.thesis-topic {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+.author-info {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.university-info, .author-details {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    margin: auto 0;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    justify-content: end;
+}
+
+.university-logo, .author-photo {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 48px;
+    border-radius: 160px;
+    align-self: stretch;
+    margin: auto 0;
+    flex-shrink: 0;
+}
+
+
+.author-photo {
+    aspect-ratio: 0.98;
+    border-radius: 36px;
+}
+
+.university-name, .author-name {
+    align-self: stretch;
+    margin: auto 0;
+}
+
+/* Content sections */
+
+.content-section {
+    margin-top: 5px;
+    width: 100%;
+    padding: 40px 100px;
+    color: rgba(26, 26, 26, 1);
+}
+
+.two-column-layout {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    gap: 40px;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.two-column-layout.reverse {
+    margin-top: 40px;
+}
+
+.text-column {
+    align-self: start;
+    min-width: 240px;
+    flex: 1;
+    flex-basis: 0%;
+}
+
+.section-heading {
+    align-self: stretch;
+    flex: 1;
+    flex-basis: 0%;
+    background-color: rgba(199, 227, 117, 1);
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.section-text {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.section-image {
+    aspect-ratio: 1.88;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    min-height: 340px;
+    min-width: 240px;
+    flex: 1;
+    flex-basis: 0%;
+}
+
+/* Goal section */
+
+.goal-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 267px;
+    width: 100%;
+    padding: 80px 100px;
+    align-items: stretch;
+    color: rgba(26, 26, 26, 1);
+    justify-content: center;
+}
+
+.goal-background {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.goal-content {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 0 135px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal-heading {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.goal-text {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    min-width: 320px;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 790px;
+}
+
+/* Tasks and Results section */
+
+.tasks-results-section {
+    margin-top: 5px;
+    width: 100%;
+    padding: 40px 100px;
+    color: rgba(26, 26, 26, 1);
+}
+
+.tasks-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+}
+
+.tasks-heading {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.tasks-grid {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    align-items: center;
+    gap: 40px 100px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.task-item {
+    align-self: stretch;
+    display: flex;
+    min-width: 240px;
+    max-width: 340px;
+    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 252px;
+}
+
+.task-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 48px;
+}
+
+.task-text {
+    min-width: 300px;
+    max-width: 400px;
+    margin-top: 10px;
+}
+
+.methodology-results-container {
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    align-items: start;
+    gap: 40px;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.methodology-container, .results-container {
+    min-width: 240px;
+    flex: 1;
+    flex-basis: 0%;
+}
+
+
+.prototype-container {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.prototype-image {
+    aspect-ratio: 2.01;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    min-height: 655px;
+    margin-top: 10px;
+}
+
+.prototype-caption {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* Footer */
+
+.page-footer {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.contacts-section {
+    background-color: rgba(246, 246, 246, 1);
+    display: flex;
+    width: 100%;
+    padding: 40px 100px;
+    flex-direction: column;
+    align-items: stretch;
+    color: rgba(26, 26, 26, 1);
+    justify-content: center;
+}
+
+.contacts-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: start;
+}
+
+.contacts-heading {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.contacts-grid {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+    align-items: start;
+    gap: 7px 10px;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    min-width: 240px;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-icons {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 36px;
+    align-self: stretch;
+    margin: auto 0;
+    flex-shrink: 0;
+}
+
+.contact-label {
+    font-weight: 600;
+    align-self: stretch;
+    margin: auto 0;
+}
+
+.contact-value {
+    font-weight: 400;
+    text-decoration: underline;
+    align-self: stretch;
+    margin: auto 0;
+    color: inherit;
+}
+
+.copyright {
+    align-self: stretch;
+    background-color: rgba(26, 26, 26, 1);
+    width: 100%;
+    padding: 40px 60px;
+    font-size: 14px;
+    color: rgba(199, 227, 117, 1);
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Media queries */
+@media (max-width: 1023px) {
+    .content-wrapper {
+        max-width: 100%;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .contact-menu-item {
+        white-space: initial;
+    }
+
+    .hero-section {
+        max-width: 100%;
+        padding: 80px 180px;
+    }
+
+    .hero-content {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: 310px;
+    }
+
+    .thesis-title {
+        font-size: 28px;
+        font-weight: 800;
+        min-width: 221px;
+    }
+
+    .thesis-info {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .thesis-topic {
+        font-size: 20px;
+        font-weight: 400;
+        align-self: flex-start;
+        min-width: 235px;
+        margin-top: 10px;
+        max-width: 305px;
+    }
+
+    .author-info {
+        align-self: center;
+        display: flex;
+        margin-top: 5px;
+        min-width: 305px;
+        align-items: flex-start;
+        font-size: 14px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .university-info, .author-details {
+        display: flex;
+        min-width: auto;
+        padding: 5px 0px;
+        align-items: center;
+        gap: 5px;
+        justify-content: flex-start;
+
+    }
+
+    .university-logo, .author-photo {
+        aspect-ratio: 1;
+        object-fit: contain;
+        object-position: center;
+        width: 32px;
+        border-radius: 107px;
+    }
+
+    .content-section {
+        max-width: 100%;
+        padding: 40px 20px;
+    }
+
+    .two-column-layout {
+        max-width: 100%;
+        gap: 20px;
+    }
+
+
+    .section-heading {
+        max-width: 100%;
+        font-size: 20px;
+    }
+
+    .section-text {
+        font-size: 14px;
+        margin-top: 5px;
+        max-width: 100%;
+    }
+
+    .section-image {
+        max-width: 100%;
+        min-height: 230px;
+    }
+
+    .goal-section {
+        min-height: 196px;
+        width: 100%;
+        padding: 60px 20px;
+    }
+
+    .goal-heading {
+        font-size: 20px;
+    }
+
+    .goal-text {
+        font-size: 14px;
+        margin-top: 5px;
+        width: 100%;
+        min-width: 320px;
+        max-width: 600px;
+    }
+
+    .tasks-results-section {
+        max-width: 100%;
+        padding: 40px 20px;
+        margin-top: 5px;
+    }
+
+    .tasks-container {
+        max-width: 100%;
+    }
+
+    .tasks-heading {
+        font-size: 20px;
+    }
+
+    .tasks-grid {
+        width: 100%;
+        margin-top: 20px;
+        gap: 40px;
+        font-size: 14px;
+    }
+
+    .task-item {
+        max-width: 240px;
+        width: 204px;
+    }
+
+    .task-text {
+        min-width: 255px;
+        margin-top: 5px;
+    }
+
+    .methodology-results-container {
+        max-width: 100%;
+        gap: 20px;
+    }
+
+
+    .methodology-container {
+        max-width: 100%;
+    }
+
+    .results-container {
+        max-width: 100%;
+    }
+
+    .prototype-container {
+        max-width: 100%;
+    }
+
+    .prototype-image {
+        max-width: 100%;
+        margin-top: 5px;
+        min-height: 454px;
+    }
+
+    .prototype-caption {
+        max-width: 100%;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+
+    .page-footer {
+        max-width: 100%;
+    }
+
+    .contacts-section {
+        max-width: 100%;
+        padding: 40px 20px;
+    }
+
+    .contacts-container {
+        max-width: 100%;
+    }
+
+    .contacts-heading {
+        font-size: 20px;
+    }
+
+    .contacts-grid {
+        max-width: 100%;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .contact-item {
+        white-space: initial;
+    }
+
+    .copyright {
+        max-width: 100%;
+        padding: 40px 20px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 300px) {
+    .content-wrapper {
+        max-width: 100%;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .contact-menu-item {
+        white-space: initial;
+    }
+
+    .hero-section {
+        max-width: 100%;
+        padding: 80px 120px;
+    }
+
+
+    .hero-content {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        max-width: 310px;
+    }
+
+    .thesis-title {
+        font-size: 24px;
+        min-width: 181px;
+    }
+
+    .thesis-info {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .thesis-topic {
+        font-size: 18px;
+        align-self: center;
+        min-width: 235px;
+        margin-top: 10px;
+    }
+
+    .author-info {
+        max-width: 531px;
+        font-size: 12px;
+        width: 100%;
+    }
+
+
+    .two-column-layout {
+        max-width: 100%;
+        gap: 20px;
+    }
+
+    .section-heading {
+        font-size: 18px;
+    }
+
+    .section-text {
+        font-size: 12px;
+    }
+
+    .section-image {
+        aspect-ratio: 3.31;
+        max-width: 100%;
+    }
+
+    .goal-section {
+        min-height: 242px;
+        width: 100%;
+        padding: 80px 20px;
+    }
+
+    .goal-heading {
+        font-size: 18px;
+        min-width: 140px;
+    }
+
+    .goal-text {
+        font-size: 12px;
+        min-width: 220px;
+    }
+
+    .tasks-heading {
+        font-size: 18px;
+    }
+
+    .tasks-grid {
+        margin-top: 20px;
+        gap: 40px 20px;
+        font-size: 12px;
+    }
+
+    .task-item {
+        width: 115px;
+    }
+
+    .task-text {
+        min-width: 115px;
+    }
+
+    .prototype-image {
+        aspect-ratio: 2.58;
+        min-height: 300px;
+    }
+
+    .prototype-caption {
+        font-size: 12px;
+    }
+
+    .contacts-section {
+        padding: 20px;
+    }
+
+    .contacts-heading {
+        font-size: 18px;
+    }
+
+    .contacts-grid {
+        font-size: 12px;
+    }
+
+    .contact-icons {
+        width: 24px;
+    }
+
+    .copyright {
+        padding: 20px;
+        font-size: 10px;
+    }
+
+
+}

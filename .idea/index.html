@@ -1,18 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Бакалаврська робота - Інтернет-магазин квітів</title>
 
+
     <!-- SEO -->
-    <meta name="description" content="Розробка веб-застосунку інтернет-магазину квітів на базі WordPress">
+    <meta name="description"
+          content="Бакалаврська робота на тему розробки веб-застосунку магазину квітів на базі WordPress">
     <meta name="keywords" content="бакалаврська робота, інтернет-магазин, квіти, веб-розробка, WordPress, CMS">
     <meta name="author" content="Юлія Костенко">
 
     <!-- Open Graph (для соцмереж) -->
     <meta property="og:title" content="Бакалаврська робота - Інтернет-магазин квітів">
-    <meta property="og:description" content="Дослідження та розробка сучасного веб-застосунку для продажу квітів онлайн на платформі WordPress">
+    <meta property="og:description"
+          content="Бакалаврська робота на тему розробки веб-застосунку магазину квітів на базі WordPress">
     <meta property="og:image" content="img/hero_section.png">
     <meta property="og:url" content="https://ulakostenko.github.io/BachelorLanding/">
     <meta property="og:type" content="website">
@@ -23,105 +26,286 @@
             "@context": "https://schema.org",
             "@type": "WebPage",
             "name": "Бакалаврська робота - Інтернет-магазин квітів",
-            "description": "Дослідження та розробка веб-застосунку для продажу квітів онлайн з використанням CMS WordPress"
+            "description": "Бакалаврська робота на тему розробки веб-застосунку магазину квітів на базі WordPress",
+            "author": {
+                "@type": "Person",
+                "name": "Юлія Костенко"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Сумський державний університет"
+            }
         }
     </script>
 
-    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/style.css"/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;800&display=swap"
+            rel="stylesheet"
+    />
 </head>
 <body>
+<div class="landing-page">
+    <div class="content-wrapper">
+        <nav class="main-menu" role="navigation" aria-label="Основне меню">
+            <a href="#description" class="menu-item">Опис роботи</a>
+            <a href="#relevance" class="menu-item">Актуальність теми</a>
+            <a href="#goal" class="menu-item">Мета</a>
+            <a href="#tasks" class="menu-item">Основні завдання</a>
+            <a href="#methodology" class="menu-item">Методологія</a>
+            <a href="#results" class="menu-item">Очікувані результати</a>
+            <a href="#prototype" class="menu-item">Прототип</a>
+            <div class="contact-menu-item">
+                <img
+                        src="img/icon-contacts.svg"
+                        alt="Контакти іконка"
+                        class="contact-icon"
+                />
+                <a href="#contacts" class="menu-item">Контакти</a>
+            </div>
+        </nav>
 
-<header role="banner">
-    <h1>Бакалаврська робота</h1>
-    <p><strong>Тема:</strong> Веб-застосунок інтернет-магазину квітів</p>
-    <p><strong>Сумський державний університет</strong></p>
-    <p><strong>Автор:</strong> Костенко Юлія</p>
-</header>
+        <header class="hero-section" role="banner" aria-label="Головний банер сайту">
+            <img
+                    src="img/header-banner.png"
+                    alt="Фонове зображення квітів"
+                    class="hero-background"
+            />
+            <div class="hero-content">
+                <div class="thesis-info">
+                    <h1 class="thesis-title">Бакалаврська робота</h1>
+                    <p class="thesis-topic">
+                        <span class="bold-text">Тема:</span> Веб-застосунок
+                        інтернет-магазину квітів
+                    </p>
+                </div>
+                <div class="author-info">
+                    <div class="university-info">
+                        <img
+                                src="img/university-logo.png"
+                                alt="Логотип університету"
+                                class="university-logo"
+                        />
+                        <p class="university-name">Сумський державний університет</p>
+                    </div>
+                    <div class="author-details">
+                        <img
+                                src="img/author-photo.png"
+                                alt="Фото автора"
+                                class="author-photo"
+                        />
+                        <p class="author-name">
+                            <span class="bold-text">Автор:</span> Костенко Юлія
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-<nav role="navigation" aria-label="Основне меню">
-    <ul>
-        <li><a href="#about">Опис роботи</a></li>
-        <li><a href="#relevance">Актуальність теми</a></li>
-        <li><a href="#goal">Мета</a></li>
-        <li><a href="#tasks">Основні завдання</a></li>
-        <li><a href="#methodology">Методологія</a></li>
-        <li><a href="#results">Очікувані результати</a></li>
-        <li><a href="#prototype">Прототип</a></li>
-        <li><a href="#contact">Контакти</a></li>
-    </ul>
-</nav>
+        <section id="description" class="content-section">
+            <div class="two-column-layout">
+                <div class="text-column">
+                    <h2 class="section-heading">Опис роботи:</h2>
+                    <p class="section-text">
+                        Розробка веб-застосунку на базі CMS WordPress для
+                        інтернет-магазину квітів. Проєкт передбачає створення
+                        адаптивного веб-сайту для продажу квітів, що включає каталог
+                        товарів, кошик замовлень, інтеграцію з платіжними системами та
+                        функціонал для управління замовленнями. Вибір CMS WordPress
+                        обумовлений її гнучкістю, широким вибором плагінів та можливістю
+                        кастомізації під потреби конкретного бізнесу.
+                    </p>
+                </div>
+                <img
+                        src="img/wordpress_shop.png"
+                        alt="Зображення інтерфейсу WordPress"
+                        class="section-image"
+                />
+            </div>
 
-<main role="main">
+            <div class="two-column-layout reverse">
+                <img
+                        src="img/flowershop_owner.png"
+                        alt="Зображення флориста з квітами"
+                        class="section-image"
+                />
+                <div class="text-column" id="relevance">
+                    <h2 class="section-heading">Актуальність теми:</h2>
+                    <p class="section-text">
+                        Онлайн-продажі квітів набувають популярності, оскільки клієнти
+                        цінують можливість швидко обрати та замовити букет із доставкою.
+                        Використання WordPress дозволяє створювати масштабовані
+                        веб-магазини з інтуїтивно зрозумілим інтерфейсом як для
+                        клієнтів, так і для адміністраторів сайту. Автоматизація процесу
+                        обробки замовлень, інтеграція з системами оплати та гнучкі
+                        налаштування дозволяють зменшити витрати на ведення бізнесу.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-    <section id="about">
-        <h2>Опис роботи:</h2>
-        <p>Розробка веб-застосунку на базі CMS <strong>WordPress</strong>
-            для інтернет-магазину квітів. Проєкт передбачає створення адаптивного веб-сайту для продажу квітів,
-            що включає каталог товарів, кошик замовлень, інтеграцію з платіжними системами та функціонал для управління
-            замовленнями. Вибір CMS WordPress обумовлений її гнучкістю, широким вибором плагінів та можливістю
-            кастомізації під потреби конкретного бізнесу.</p>
-        <img src="img/wordpress_shop.png" alt="Інтерфейс WordPress на різних пристроях" height="300">
-    </section>
+        <section id="goal" class="goal-section">
+            <img
+                    src="img/goal-baner.png"
+                    alt="Фонове зображення квітів"
+                    class="goal-background"
+            />
+            <div class="goal-content">
+                <h2 class="goal-heading">Мета розробки:</h2>
+                <p class="goal-text">
+                    Метою проєкту є створення веб-застосунку для продажу квітів, який
+                    забезпечить зручний інтерфейс, швидку обробку замовлень і
+                    можливість інтеграції з популярними сервісами доставки та оплати.
+                </p>
+            </div>
+        </section>
 
-    <section id="relevance">
-        <h2>Актуальність теми:</h2>
-        <p>Онлайн-продажі квітів набувають популярності, оскільки клієнти цінують можливість швидко обрати та замовити
-            букет із доставкою. Використання WordPress дозволяє створювати масштабовані веб-магазини з інтуїтивно
-            зрозумілим інтерфейсом як для клієнтів, так і для адміністраторів сайту. Автоматизація процесу обробки
-            замовлень, інтеграція з системами оплати та гнучкі налаштування дозволяють зменшити витрати на ведення бізнесу.</p>
-        <img src="img/flowershop_owner.png" alt="Флорист у квітковому магазині" height="300">
-    </section>
+        <section class="tasks-results-section">
+            <div class="tasks-container" id="tasks">
+                <h2 class="tasks-heading">Основні завдання:</h2>
+                <div class="tasks-grid">
+                    <div class="task-item">
+                        <img
+                                src="img/icon-search.svg"
+                                alt="Іконка дослідження"
+                                class="task-icon"
+                        />
+                        <p class="task-text">
+                            Дослідити особливості онлайн-продажу квітів та потреби
+                            цільової аудиторії.
+                        </p>
+                    </div>
+                    <div class="task-item">
+                        <img
+                                src="img/icon-interface.svg"
+                                alt="Іконка інтерфейсу"
+                                class="task-icon"
+                        />
+                        <p class="task-text">
+                            Розробити інтуїтивно зрозумілий користувацький інтерфейс.
+                        </p>
+                    </div>
+                    <div class="task-item">
+                        <img
+                                src="img/icon-rocket.svg"
+                                alt="Іконка оптимізації швидкості"
+                                class="task-icon"
+                        />
+                        <p class="task-text">
+                            Оптимізувати продуктивність сайту для швидкого завантаження
+                            сторінок.
+                        </p>
+                    </div>
+                    <div class="task-item">
+                        <img
+                                src="img/icon-payment.svg"
+                                alt="Іконка оплати"
+                                class="task-icon"
+                        />
+                        <p class="task-text">
+                            Інтегрувати сучасні платіжні системи для безпечних
+                            онлайн-оплат.
+                        </p>
+                    </div>
+                    <div class="task-item">
+                        <img
+                                src="img/icon-mobile-version.svg"
+                                alt="Іконка мобільної адаптації"
+                                class="task-icon"
+                        />
+                        <p class="task-text">
+                            Забезпечити мобільну адаптацію сайту для зручності на
+                            смартфонах.
+                        </p>
+                    </div>
+                </div>
+            </div>
 
-    <section id="goal">
-        <h2>Мета розробки:</h2>
-        <p>Метою проєкту є створення веб-застосунку для продажу квітів, який забезпечить зручний інтерфейс,
-            швидку обробку замовлень і можливість інтеграції з популярними сервісами доставки та оплати.</p>
-    </section>
+            <div class="methodology-results-container" id="methodology">
+                <div class="methodology-container">
+                    <h2 class="section-heading">Методологія розробки:</h2>
+                    <p class="section-text">
+                        Для створення веб-застосунку використовується CMS WordPress з
+                        кастомізацією теми та плагінів під потреби магазину. В якості
+                        шаблонної системи використовується Elementor, що дозволяє швидко
+                        змінювати контент.
+                    </p>
+                </div>
 
-    <section id="tasks">
-        <h2>Основні завдання:</h2>
-        <ul>
-            <li>Дослідити особливості онлайн-продажу квітів та потреби цільової аудиторії.</li>
-            <li>Розробити інтуїтивно зрозумілий користувацький інтерфейс.</li>
-            <li>Оптимізувати продуктивність сайту для швидкого завантаження сторінок.</li>
-            <li>Інтегрувати сучасні платіжні системи для безпечних онлайн-оплат.</li>
-            <li>Забезпечити мобільну адаптацію сайту для зручності на смартфонах.</li>
-        </ul>
-    </section>
+                <div class="results-container" id="results">
+                    <h2 class="section-heading">Очікувані результати:</h2>
+                    <p class="section-text">
+                        Фінальним продуктом стане функціональний інтернет-магазин
+                        квітів, що працює на WordPress, з інтегрованими модулями для
+                        керування замовленнями, онлайн-оплатою та доставкою.
+                        Веб-застосунок забезпечить автоматизацію процесу замовлення
+                        квітів, зменшить час оформлення покупки та покращить клієнтський
+                        досвід. Користувачі зможуть швидко знаходити необхідні товари,
+                        оформлювати замовлення та оплачувати покупки, а адміністратори –
+                        зручно керувати контентом магазину.
+                    </p>
+                </div>
+            </div>
 
-    <section id="methodology">
-        <h2>Методологія розробки:</h2>
-        <p>Для створення веб-застосунку використовується CMS WordPress з кастомізацією теми та плагінів під потреби магазину.
-            В якості шаблонної системи використовується Elementor, що дозволяє швидко змінювати контент.</p>
-    </section>
+            <div class="prototype-container" id="prototype">
+                <h2 class="section-heading">Початковий екран:</h2>
+                <img
+                        src="img/hero_section.png"
+                        alt="Макет початкового екрану інтернет-магазину квітів на базі WordPress"
+                        class="prototype-image"
+                />
+                <p class="prototype-caption">
+                    Макет початкового екрану інтернет-магазину квітів на базі WordPress.
+                </p>
+            </div>
+        </section>
 
-    <section id="results">
-        <h2>Очікувані результати:</h2>
-        <p>Фінальним продуктом стане функціональний інтернет-магазин квітів, що працює на WordPress, з інтегрованими
-            модулями для керування замовленнями, онлайн-оплатою та доставкою. Веб-застосунок забезпечить автоматизацію
-            процесу замовлення квітів, зменшить час оформлення покупки та покращить клієнтський досвід.
-            Користувачі зможуть швидко знаходити необхідні товари, оформлювати замовлення та оплачувати покупки,
-            а адміністратори – зручно керувати контентом магазину.</p>
-    </section>
-
-    <section id="prototype">
-        <h2>Початковий екран:</h2>
-        <img src="img/hero_section.png" alt="Макет початкового екрану інтернет-магазину" height="300">
-        <p>Макет початкового екрану інтернет-магазину квітів.</p>
-    </section>
-
-    <section id="contact">
-        <h2>Контакти:</h2>
-        <p>Email: <a href="mailto:ulakostenko7@gmail.com">ulakostenko7@gmail.com</a></p>
-        <p>Telegram: <a href="https://t.me/ulakostenko">Написати в Телеграм</a></p>
-        <p>GitHub: <a href="https://github.com/ulakostenko">ulakostenko</a></p>
-    </section>
-
-</main>
-
-<footer>
-    <p>&copy; 2025 Юлія Костенко. Всі права захищені.</p>
-</footer>
-
+        <footer class="page-footer" role="contentinfo" aria-label="Футер сайту">
+            <div class="contacts-section" id="contacts">
+                <div class="contacts-container">
+                    <h2 class="contacts-heading">Контакти:</h2>
+                    <div class="contacts-grid">
+                        <div class="contact-item">
+                            <img
+                                    src="img/icon-email.svg"
+                                    alt="Email іконка"
+                                    class="contact-icons"
+                            />
+                            <p class="contact-label">Email:</p>
+                            <a href="mailto:ulakostenko7@gmail.com" target="_blank" class="contact-value"
+                            >ulakostenko7@gmail.com</a
+                            >
+                        </div>
+                        <div class="contact-item">
+                            <img
+                                    src="img/icon-telegram.svg"
+                                    alt="Telegram іконка"
+                                    class="contact-icons"
+                            />
+                            <p class="contact-label">Telegram:</p>
+                            <a href="https://t.me/ulakostenko" target="_blank" class="contact-value">Написати в
+                                Телеграм</a>
+                        </div>
+                        <div class="contact-item">
+                            <img
+                                    src="img/icon-github.svg"
+                                    alt="GitHub іконка"
+                                    class="contact-icons"
+                            />
+                            <p class="contact-label">GitHub:</p>
+                            <a href="https://github.com/ulakostenko" target="_blank" class="contact-value"
+                            >ulakostenko</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 Юлія Костенко. Всі права захищені.
+            </div>
+        </footer>
+    </div>
+</div>
 </body>
 </html>
